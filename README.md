@@ -158,8 +158,6 @@ LAWFIRM-WEBSITE/
 ├── admin/
 │   ├── dashboard.html
 │   ├── appointments.html
-│   
-│   
 │
 ├── js/
 │   ├── booking.js
@@ -172,8 +170,6 @@ LAWFIRM-WEBSITE/
 │   ├── contact.test.js
 │   └── booking.test.js
 │
-├── docs/
-│   └── project-documentation.pdf
 │
 ├── node_modules/
 │

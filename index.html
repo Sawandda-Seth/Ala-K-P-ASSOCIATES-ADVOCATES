@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALA K. P. & Associates</title>
+    <script src="https://kit.fontawesome.com/d1ee7ce38e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config ={
+            theme: {
+                extend:{
+                    colors:{
+                        primary: "#0F172A",
+                        secondary: "#D4AF37",
+                        accent:"#1E293B"
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="big-white text-gray-700">
+
+    <!--Navbar -->
+    <nav class="bg-primary text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <a href="index.html" class="font-bold text-xl">
+                   ALA K.P. Advocates
+            </a>
+            <ul class="hidden md:flex space-x-8">
+                 <li><a href="index.html" class="hover:text-secondary">Home</a></li>
+                 <li><a href="html/about.html" class="hover:text-secondary">About</a></li>
+                 <li><a href="html/services.html" class="hover:text-secondary">Services</a></li>
+                 <li><a href="html/team.html" class="hover:text-secondary">Team</a></li>
+                 <li><a href="html/contact.html" class="hover:text-secondary">Contact</a></li>
+            </ul>
+            <button id="menuBtn" class="md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+         <div id="mobileMenu" class="hidden bg-accent md hidden">
+            
+            <a href="index.html" class="block px-6 py-3">Home</a>
+            <a href="html/about.html" class="block px-6 py-3">About</a>
+            <a href="html/services.html" class="block px-6 py-3">Services</a>
+            <a href="html/team.html" class="block px-6 py-3">Team</a>
+            <a href="html/contact.html" class="block px-6 py-3">Contact</a>
+         </div>
+         
+    </nav>
+
+    
+</body>
+</html>

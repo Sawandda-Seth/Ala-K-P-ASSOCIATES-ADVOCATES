@@ -320,5 +320,6 @@ The firm actively promotes access to justice through legal awareness initiatives
 ## License
 
 This project is developed for educational and business purposes.
+This project is licensed under the MIT License.
 
 © 2026 ALA K. P. & Associates Advocates. All Rights Reserved.

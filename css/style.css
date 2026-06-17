@@ -1,0 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.hero-overlay {
+    background: rgba(15, 23, 42, 0.75);
+}
+ .card-hover{
+    transform: translateY(-6px);
+ }
+ img{
+    max-width: 100%;
+    height:auto;
+ }

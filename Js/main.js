@@ -20,3 +20,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     });
 });
+
+// current Year
+
+const yearElements =
+document.querySelectorAll(".year");
+
+yearElements.forEach(year => {
+    year.textContent =
+    new Date().getFullYear();
+});

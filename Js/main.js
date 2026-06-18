@@ -1,9 +1,11 @@
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
-menuBtn.addEventListener("click" , () => {
-    mobileMenu.classList.toggle("hidden");
-});
+if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+       mobileMenu.classList.toggle("hidden");
+    });
+}
 
 //Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -14,7 +16,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         document.querySelector(
             this.getAttribute('href')
         )
-        .scrollTntoView({
+        .scrollIntoView({
             behavior: 'smooth'
         });
 

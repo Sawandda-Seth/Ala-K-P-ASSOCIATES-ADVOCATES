@@ -23,16 +23,14 @@
 <body class="bg-gray-100">
     <div class="flex min-h-screen">
         <!-- Sidebar -->
-         <aside class="w-2 bg-primary text-white p-6">
+         <aside class="w-72 bg-primary text-white p-6">
 
             <h1 class="text-2xl font-bold mb-10">
                 Admin Panel
             </h1>
 
             <nav class="space-y-4">
-                <a href="dashboard.html" class="block p-3 rounded hover:bg-accent">
-                    Dashboard
-                </a>
+
                 <a href="dashboard.html" class="block p-3 rounded hover:bg-accent">
                     Dashboard
                 </a>
@@ -43,8 +41,64 @@
                     Client Portal
                 </a>
             </nav>
+
          </aside>
+
+         <!-- Content -->
+          <main class="flex-1 p-8">
+
+            <h2 class="text-4xl font-bold text-primary mb-8">
+                Dashboard Overview
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-10">
+                <div class="bg-white p-6 rounded-xl shadow">
+                <h3 class="text-xl font-semibold">
+                    Appointments
+                </h3>
+
+                <p id="appointmentCount" class="text-4xl font-bold text-secondary mt-4">
+                    0
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h3 class="text-xl font-semibold">
+                    Contact Messages
+                </h3>
+
+                <p id="messageCount" class="text-4xl font-bold text-secondary mt-4">
+                    0
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h3 class="text-4xl font-semibold">
+                    Active Clients
+                </h3>
+
+                <p class="text-4xl font-bold text-secondary mt-4">
+                    100+
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Recent Appointments -->
+
+        <div class="bg-white rounded-xl shadoe p-6">
+
+            <h3 class="text-2xl font-bold mb-6">
+                Recent Appointments
+            </h3>
+
+            <div id="recentAppointments"></div>
+        </div>
+    </main>
+
     </div>
-    
+
+    <script src="../js/admin.js"></script>
+
 </body>
 </html>

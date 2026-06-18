@@ -32,6 +32,55 @@
             </a>
         </div>
      </nav>
+
+     <section class="bg-primary text-white py-20 text-center">
+
+        <h1 class="text-5xl font-bold ">
+            Book Consultation
+        </h1>
+
+        <p class="mt-4 tetx-gray-300">
+            Schedule a confidential legal consultation
+        </p>
+     </section>
+
+     <section class="py-20">
+
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="bg-white p-10 rounded-xl shadow-xl">
+                <form id="consultationForm" class="space-y-5">
+
+                    <input type="text" id="clientName" placeholder="Full Name" class="w-full border p-3 rounded-lg" required>
+                    <input type="email" id="clientEmail" placeholder="Email Address" class="w-full border p-3 rounded-lg" required>
+                    <input type="tel" id="clientPhone" placeholder="Phone Number" class="w-full border p-3 rounded-lg" required>
+
+                    <select id="practiceArea" class="w-full border p-3 rounded-lg" required>
+
+                        <option value="">Select practiceArea</option>
+
+                        
+                        <option>Litigation</option>
+                        <option>Corporate Law</option>
+                        <option>Real Estate</option>
+                        <option>Employment Law</option>
+                        <option>Banking & Finance</option>
+                        <option>Tax Advisory</option>
+
+                    </select>
+
+                    <input type="date" id="appointmentDate" class="w-full border p-3 rounded-lg" required>
+                    <textarea id="legalIssue" rows="5" placeholder="Brief Description of Legal Matter" class="w-full border p-3 rounded-lg" required></textarea>
+
+                    <button type="submit" class="bg-secondary py-3 w-full rounded-lg font-bold">
+                        Book Appointment
+                    </button>
+                </form>
+            </div>
+        </div>
+
+     </section>
+
+     <script src="../js/booking.js"></script>
     
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+        tailwind.config ={
+            theme:{
+                extend:{
+                    colors:{
+                        primary:"#0F172A",
+                        secondary:"#D4AF37",
+                        accent:"#1E293B"
+                    }
+
+                }
+            }
+        } 
+    </script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+         <aside class="w-2 bg-primary text-white p-6">
+
+            <h1 class="text-2xl font-bold mb-10">
+                Admin Panel
+            </h1>
+
+            <nav class="space-y-4">
+                <a href="dashboard.html" class="block p-3 rounded hover:bg-accent">
+                    Dashboard
+                </a>
+                <a href="dashboard.html" class="block p-3 rounded hover:bg-accent">
+                    Dashboard
+                </a>
+                <a href="appointments.html" class="block p-3 rounded hover:bg-accent">
+                    Appointments
+                </a>
+                <a href="../html/client-portal.html" class="block p-3 rounded hover:bg-accent">
+                    Client Portal
+                </a>
+            </nav>
+         </aside>
+    </div>
+    
+</body>
+</html>

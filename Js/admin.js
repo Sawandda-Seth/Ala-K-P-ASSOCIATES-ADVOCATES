@@ -113,7 +113,7 @@ function deleteAppointment(id) {
     );
 
     localStorage.setItem(
-        "appontments"
+        "appontments",
         JSON.stringify(updatedAppointments)
 
     );

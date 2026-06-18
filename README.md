@@ -144,41 +144,43 @@ The firm specializes in litigation, corporate law, banking and finance, employme
 
 ## Project Structure
 
-LAWFIRM-WEBSITE/
+LAWFIRM/
 │
 ├── index.html
 │
-├── html/
-│   ├── services.html
-│   ├── team.html
-│   ├── resources.html
-│   ├── contact.html
-│   └── consultation.html
-│
 ├── admin/
 │   ├── dashboard.html
-│   ├── appointments.html
+│   └── appointments.html
+│
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   └── images/
+│
+├── html/
+│   ├── about.html
+│   ├── services.html
+│   ├── team.html
+│   ├── consultation.html
+│   ├── contact.html
+│   ├── client-portal.html
+│   ├── resources.html
+│   └── blog.html
 │
 ├── js/
+│   ├── main.js
 │   ├── booking.js
 │   ├── contact.js
-│   ├── main.js
-│   ├── portal.js
+│   ├── admin.js
+│   └── portal.js
 │
-├── tests/
-│   ├── consultation.test.js
+├── test files/
 │   ├── contact.test.js
-│   └── booking.test.js
+│   └── consultation.test.js
 │
-│
-├── node_modules/
-│
-├── .gitignore
 ├── package.json
-├── package-lock.json
-├── LICENSE
-└── README.md
-
+├── README.md
+└── .gitignore
 
 
 ## Installation

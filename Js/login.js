@@ -1,0 +1,35 @@
+// Get form
+const loginForm = document.getElementById("loginForm");
+
+// Listen for login
+loginForm.addEventListener("submit", function(e){
+
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    // Admin credentials
+    if (
+        email === "sethsawanda7@gmail.com" && 
+        password === "SAWanda@123"   
+    ) {
+        localStorage.setItem ("userRole" , "admin");
+        window.location.href ="admin/dashboard.html";
+
+        return;
+    }
+
+    // Client credentials
+    if (
+        email === "sawandawork@gmail.com" &&
+        password === "client123"
+
+    ) {
+        localStorage.setItem("useRole", "client");
+        window.localStorage.href = "html/client-portal.html";
+
+        return;
+    }
+
+    alert("Invalid login credentials");
+});

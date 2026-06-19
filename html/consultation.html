@@ -1,95 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Consultation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config ={
-            theme:{
-                extend:{
-                    colors:{
-                        primary:"#0F172A",
-                        secondary:"#D4AF37",
-                        accent:"#1E293B"
-                    }
-
-                }
-            }
-        } 
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0F172A",
+              secondary: "#D4AF37",
+              accent: "#1E293B",
+            },
+          },
+        },
+      };
     </script>
-    <link rel="stylesheet" href="../css/style.css">
-
-</head>
-<body class="bg-gray-100">
-
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="bg-gray-100">
     <!-- Navbar -->
-     <nav class="bg-primary text-white py-4">
-        <div class="max-w-7xl mx-auto px-6">
-            <a href="../index.html" class="font-bold text-xl">
-                ALA K.P. Advocates
-            </a>
-        </div>
-     </nav>
+    <nav class="bg-primary text-white py-4">
+      <div class="max-w-7xl mx-auto px-6">
+        <a href="../index.html" class="font-bold text-xl">
+          ALA K.P. Advocates
+        </a>
+      </div>
+    </nav>
 
-     <section class="bg-primary text-white py-20 text-center">
+    <section class="bg-primary text-white py-20 text-center">
+      <h1 class="text-5xl font-bold">Book Consultation</h1>
 
-        <h1 class="text-5xl font-bold ">
-            Book Consultation
-        </h1>
+      <p class="mt-4 tetx-gray-300">
+        Schedule a confidential legal consultation
+      </p>
+    </section>
 
-        <p class="mt-4 tetx-gray-300">
-            Schedule a confidential legal consultation
-        </p>
-     </section>
+    <section class="py-20">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="bg-white p-10 rounded-xl shadow-xl">
+          <form id="consultationForm" class="space-y-5">
+            <input
+              type="text"
+              id="clientName"
+              placeholder="Full Name"
+              class="w-full border p-3 rounded-lg"
+              required
+            />
+            <input
+              type="email"
+              id="clientEmail"
+              placeholder="Email Address"
+              class="w-full border p-3 rounded-lg"
+              required
+            />
+            <div class="flex gap-2">
+              <!-- Country Code Dropdown -->
+              <select
+                id="countryCode"
+                class="border p-3 rounded-lg bg-white"
+                required
+              >
+                <option value="+254">🇰🇪 +254</option>
+                <option value="+255">🇹🇿 +255</option>
+                <option value="+256">🇺🇬 +256</option>
+                <option value="+27">🇿🇦 +27</option>
+                <option value="+250">🇷🇼 +250</option>
+                <option value="+257">🇧🇮 +257</option>
+                <option value="+211">🇸🇸 +211</option>
+                <option value="+1">🇺🇸 +1</option>
+                <option value="+44">🇬🇧 +44</option>
+                <option value="+91">🇮🇳 +91</option>
+              </select>
 
-     <section class="py-20">
-
-        <div class="max-w-3xl mx-auto px-6">
-            <div class="bg-white p-10 rounded-xl shadow-xl">
-                <form id="consultationForm" class="space-y-5">
-
-                    <input type="text" id="clientName" placeholder="Full Name" class="w-full border p-3 rounded-lg" required>
-                    <input type="email" id="clientEmail" placeholder="Email Address" class="w-full border p-3 rounded-lg" required>
-                    <input type="tel" id="clientPhone" placeholder="Phone Number" class="w-full border p-3 rounded-lg" required>
-
-                    <select id="practiceArea" class="w-full border p-3 rounded-lg" required>
-
-                        <option value="">Select practiceArea</option>
-
-                        
-                        <option>Litigation</option>
-                        <option>Corporate Law</option>
-                        <option>Real Estate</option>
-                        <option>Employment Law</option>
-                        <option>Banking & Finance</option>
-                        <option>Tax Advisory</option>
-
-                    </select>
-
-                    <input type="date" id="appointmentDate" class="w-full border p-3 rounded-lg" required>
-                    <textarea id="legalIssue" rows="5" placeholder="Brief Description of Legal Matter" class="w-full border p-3 rounded-lg" required></textarea>
-
-                    <button type="submit" class="bg-secondary py-3 w-full rounded-lg font-bold">
-                        Book Appointment
-                    </button>
-                </form>
+              <!-- Phone Number -->
+              <input
+                type="tel"
+                id="clientPhone"
+                placeholder="712345678"
+                class="flex-1 border p-3 rounded-lg"
+                required
+              />
             </div>
+
+            <select
+              id="practiceArea"
+              class="w-full border p-3 rounded-lg"
+              required
+            >
+              <option value="">Select practiceArea</option>
+
+              <option>Litigation</option>
+              <option>Corporate Law</option>
+              <option>Real Estate</option>
+              <option>Employment Law</option>
+              <option>Banking & Finance</option>
+              <option>Tax Advisory</option>
+            </select>
+
+            <input
+              type="date"
+              id="appointmentDate"
+              class="w-full border p-3 rounded-lg"
+              required
+            />
+            <textarea
+              id="legalIssue"
+              rows="5"
+              placeholder="Brief Description of Legal Matter"
+              class="w-full border p-3 rounded-lg"
+              required
+            ></textarea>
+
+            <button
+              type="submit"
+              class="bg-secondary py-3 w-full rounded-lg font-bold"
+            >
+              Book Appointment
+            </button>
+          </form>
         </div>
+      </div>
+    </section>
+    <footer class="bg-black text-white py-12 text-center">
+      <p class="text-center text-gray-400">
+        © <span class="year"></span>
+        ALA K. P. & Associates Advocates. All Rights Reserved.
+      </p>
+    </footer>
 
-     </section>
-     <footer class="bg-black text-white py-12 text-center">
-
-            <p class="text-center text-gray-400">
-                    ©  <span class="year"></span>
-                     ALA K. P. & Associates Advocates. All Rights Reserved.
-                </p>
-
-            </footer>
-
-
-     <script src="../js/booking.js"></script>
-    
-</body>
+    <script src="../js/booking.js"></script>
+  </body>
 </html>

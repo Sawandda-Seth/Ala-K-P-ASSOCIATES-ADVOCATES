@@ -1,37 +1,39 @@
-const appointments =
- JSON.parse(localStorage.getItem ("appointments")) || [];
+const contactForm = document.getElementById("contactForm");
 
- const clientAppointments =
- document.getElementById("clientAppointments");
+contactForm.addEventListener("submit", function (e) {
 
- if (
-    appointments.length == 0
+    e.preventDefault();
 
- ) {
-    clientAppointments.innerHTML = `
-    <p class="text-gray-500">
-            No appointments found.
-    </p>
-    `;
- } else {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-    clientAppointments.innerHTML = appointments
-    .map(appointment => `
-        <div class="border rounded-lg p-5 mb-4">
+    if(!name || !email|| !subject || !message) {
+        alert("Please complece all fields.");
+        return;
+    }
 
-            <h3 class="font-bold text-lg">
-                ${appointment.practiceArea}
-            </h3>
+    const contactData = {
+        id: Date.now(),
+        name,
+        email,
+        subject,
+        message,
+        createdAt: new Date().toLocaleString()
+    };
 
-            <p>
-                ${appointment.appointmentDate}
-            </p>
+    const messages =
+    JSON.parse(
+        localStorage.getItem("message")) || [];
 
-            <p>
-                ${appointment.name}
-            </p>
+        message.push(contactData);
+        localStorage.setItem(
+            "message",
+            JSON.stringify(messages)
+        );
 
-        </div>
-        `)
-        .join("");
- }
+        alert("Message sent successfully.");
+        contactForm.reset();
+
+});

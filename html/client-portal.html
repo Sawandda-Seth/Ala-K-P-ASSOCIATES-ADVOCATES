@@ -6,6 +6,12 @@
     <title>Client Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
+        const role = localStorage.getItem("userRole");
+        if ( role !== "client" &&
+            role!== "admin"
+        ) {
+            window.location.href = "../login.html";
+        }
         tailwind.config ={
             theme:{
                 extend:{

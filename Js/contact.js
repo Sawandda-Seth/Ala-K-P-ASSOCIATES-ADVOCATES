@@ -27,7 +27,7 @@ contactForm.addEventListener("submit", function (e) {
     JSON.parse(
         localStorage.getItem("message")) || [];
 
-        message.push(contactData);
+        messages.push(contactData);
         localStorage.setItem(
             "message",
             JSON.stringify(messages)

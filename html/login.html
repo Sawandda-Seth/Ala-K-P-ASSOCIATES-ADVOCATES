@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.6/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+
+        <h2 class="text-3xl font-bold mb-6 text-center">
+            Login
+        </h2>
+
+        <form id="loginForm">
+
+            <input type="email" id="email" placeholder="Email" class="w-full border p-3 rounded mb-4" required>
+            <input type="password" id="password" placeholder="Password" class="w-full border p-3 rounded mb-4" required>
+            <button type="submit" class="bg-blue-600 text-white w-full py-3 rounded">
+                Login
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

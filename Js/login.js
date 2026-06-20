@@ -19,8 +19,8 @@ loginForm.addEventListener("submit", function(e){
 
         return;
     }
+    alert("Invalid login credentials");
 
-    // Client credentials
     if (
         email === "sawandawork@gmail.com" &&
         password === "client123"
@@ -32,5 +32,36 @@ loginForm.addEventListener("submit", function(e){
         return;
     }
 
-    alert("Invalid login credentials");
-});
+    //Registered Users
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const user = users.find(
+        user =>
+            user.email === email &&
+        user.password === password
+    );
+    if(user){
+
+            localStorage.setItem(
+                "userRole",
+                "client"
+            );
+
+            localStorage.setItem(
+                "loggedInUser",
+                JSON.stringify(user)
+            );
+
+            window.location.href =
+            "html/client-portal.html";
+
+            return;
+        }
+
+        alert(
+            "Invalid email or password."
+        );
+
+    }
+);
+
+

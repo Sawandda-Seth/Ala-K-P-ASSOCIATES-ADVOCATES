@@ -13,6 +13,7 @@ loginForm.addEventListener("submit", function(e){
         email === "sethsawanda7@gmail.com" && 
         password === "SAWanda@123"   
     ) {
+        
         localStorage.setItem ("userRole" , "admin");
         window.location.href ="admin/dashboard.html";
 
@@ -25,8 +26,8 @@ loginForm.addEventListener("submit", function(e){
         password === "client123"
 
     ) {
-        localStorage.setItem("useRole", "client");
-        window.localStorage.href = "html/client-portal.html";
+        localStorage.setItem("userRole", "client");
+        window.local.href = "html/client-portal.html";
 
         return;
     }

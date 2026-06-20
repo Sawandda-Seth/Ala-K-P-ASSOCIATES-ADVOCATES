@@ -10,23 +10,82 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+    <div class="min-h-screen grid lg:grid-cols-2">
 
-        <h2 class="text-3xl font-bold mb-6 text-center">
-            Login
-        </h2>
+    <!-- Branding Side -->
 
-        <form id="loginForm">
+    <div class="bg-primary text-white flex items-center justify-center p-10">
 
-            <input type="email" id="email" placeholder="Email" class="w-full border p-3 rounded mb-4" required>
-            <input type="password" id="password" placeholder="Password" class="w-full border p-3 rounded mb-4" required>
-            <button type="submit" class="bg-blue-600 text-white w-full py-3 rounded">
-                Login
-            </button>
+        <div>
 
-        </form>
+            <h1 class="text-5xl font-bold mb-4">
+                ALA K.P. Advocates
+            </h1>
+
+            <p class="text-xl text-gray-300">
+                Strategic Legal Solutions
+                with Integrity & Excellence
+            </p>
+
+        </div>
 
     </div>
+
+    <!-- Login Form -->
+
+    <div class="flex items-center justify-center bg-gray-100">
+
+        <div class="bg-white shadow-2xl rounded-2xl p-10 w-full max-w-md">
+
+            <h2 class="text-3xl font-bold mb-6">
+                Sign In
+            </h2>
+
+            <form id="loginForm" class="space-y-4">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    class="w-full border p-3 rounded-lg"
+                >
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    class="w-full border p-3 rounded-lg"
+                >
+
+                <button
+                    type="submit"
+                    class="bg-secondary w-full py-3 rounded-lg font-bold"
+                >
+                    Login
+                </button>
+
+            </form>
+
+            <div class="text-center mt-6">
+
+                <p class="text-gray-600">
+                    Need access to the client portal?
+                </p>
+
+                <a
+                    href="html/request-access.html"
+                    class="text-blue-600 font-semibold"
+                >
+                    Request Portal Access
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
     <script src="js/login.js"></script>
 </body>

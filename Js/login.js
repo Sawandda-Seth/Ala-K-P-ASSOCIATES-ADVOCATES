@@ -41,7 +41,7 @@ loginForm.addEventListener("submit", function(e){
     );
     if(user){
 
-            localStorage.setItem(
+            localStorage.getItem(
                 "userRole",
                 "client"
             );
